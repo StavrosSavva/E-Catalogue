@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.e_catalogue.ItemAct"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:background="@drawable/shadow">
+
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchv"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@color/trans"
+
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#000"
+            app:queryHint="Search"
+            app:searchIcon="@drawable/baseline_search_black_18dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="55dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="5dp"
+            android:background="#000"
+            android:elevation="20dp"
+            app:srcCompat="@drawable/ic_shopping_cart_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="260dp"
+            android:orientation="horizontal"
+
+            >
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/ListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="105dp"
+        android:background="#fff"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="64dp">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:text="Menu" />
+
+
+</RelativeLayout>

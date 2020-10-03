@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/location"
+            android:icon="@drawable/ic_pin_drop_black_24dp"
+            android:title="Location" />
+
+    </group>
+    <group
+        android:id="@+id/menu_mid"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/order"
+            android:icon="@drawable/ic_inbox_black_24dp"
+            android:title="Orders" />
+    </group>
+
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/account"
+        android:title="Account" />
+
+</menu>
